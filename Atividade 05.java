@@ -2,10 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package Atividade_05;
-
+package atividade_05;
 import java.util.Scanner;
-
 /**
  *
  * @author Aluno
@@ -17,7 +15,7 @@ public class Atividade_05 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-          Scanner entrada= new Scanner(System.in);
+         Scanner entrada= new Scanner(System.in);
 //         Atividade 01
 
 //           int num, i;
@@ -87,7 +85,7 @@ public class Atividade_05 {
 //                   opcao = -1;
 //                   
 //                   while (opcao != 0){
-//                       System.out.println(" **MENU** \n1 - Somar \n2 - Subtrair \n3 - Multiplicar \n0 - Sair ");
+//                       System.out.println(" MENU \n1 - Somar \n2 - Subtrair \n3 - Multiplicar \n0 - Sair ");
 //                       opcao= entrada.nextInt();
 //                       
 //                       switch (opcao){
@@ -129,34 +127,88 @@ public class Atividade_05 {
 //                   }
                        
 //                            Atvidade 05
-             
-                              int n, i;
-                              float total;
-                              System.out.println("Digite o numero desejado: ");
-                                  n=entrada.nextInt();
-                                  
-                              i=n;
-                              total=1;
+//             
+//                              int n, i;
+//                              float total;
+//                              System.out.println("Digite o numero desejado: ");
+//                                  n=entrada.nextInt();
+//                                  
+//                              i=n;
+//                              total=1;
+//                              
+//                               if (n<0) {
+//                                    System.out.println("Numero invalido!");
+//                                    }
+//                               
+//                              while (i>0) {
+//                                    total=i*total;
+//                                    i=i-1;
+//                                    System.out.println("Resultado: "+total);
+//                              }
                               
-                               if (n<0) {
-                                    System.out.println("Numero invalido!");
-                                    }
-                               
-                              while (i>0) {
-                                    total=i*total;
-                                    i=i-1;
-                                    System.out.println("Resultado: "+total);
-                              }
-                              
-                      
-                              
-//                              Atividade 06
-//                    int n, termos, i;
-//                    System.out.println("Digite o valor");
-//                                
-//        
-             
-             
-    }
+
+
+//                          Atividade 06
+//
+//                    int num, i, j, sequencia;
+//                    
+//                    
+//                    i=1;
+//                    j=0;
+//                    sequencia=i+j;
+//                    System.out.println("Digite o valor desejado para parar a sequência: ");
+//                    num = entrada.nextInt();
+//                    
+//                    if (num<0) {
+//                        System.out.println("Numero invalido! \nDigite um valor positivo!");
+//                    }
+//                    else{
+//                        System.out.println("A sequencia de Fibonacci será: ");
+//                        while (j<=num) {
+//                            System.out.println(j);
+//                            sequencia=i+j;
+//                            j=i;
+//                            i=sequencia;
+//                    }
+//                    }
+
+//                  Atividade 07
+
+//                    boolean primo=true;
+//                    int i, n;
+//                    i=2;
+//                    System.out.println("Digite o numero a ser verificado: ");
+//                    n= entrada.nextInt();
+//                    while (i*i<=n){
+//                        if (n%i==0) {
+//                            primo=false;
+//                            break;
+//                        }
+//                        i++;
+//                    }
+//                    
+//                    if (primo) {
+//                        System.out.println("O numero "+n+" é primo!");
+//                    }
+//                    else {
+//                        System.out.println("O numero "+n+" não é primo!");
+//                    }
+//                    
+
+
+//                  Atividade 08
+
+//                    double num, total;
+//                    total=0;
+//                    num=0;
+//                    
+//                    while (num>=0){
+//                        System.out.println("Digite o numero: ");
+//                        num= entrada.nextDouble();
+//                        total=total+num;
+//                    }
+//                    System.out.println("A soma total será: "+total);
+
     
+    }
 }
