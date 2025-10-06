@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package caixa.rapido.desafio;
+package desafio_01;
 
 /**
  *
@@ -12,12 +12,16 @@ import java.util.Scanner;
 import java.lang.Math;
 import java.util.Random;
 import java.text.DecimalFormat;
-public class CaixaRapidoDesafio {
+
+public class Desafio_01 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // TODO code application logic here
+        
+        public static void main(String[] args) {
         // TODO code application logic here
         Random random = new Random();
         Scanner entrada = new Scanner (System.in);
@@ -420,6 +424,7 @@ public class CaixaRapidoDesafio {
             
         entrada.close();
         System.out.println("Encerrando o atendimento. Obrigado por utilizar o Caixa Rápido.");
-        }
-
+        
+    }
+    
 }
