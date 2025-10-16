@@ -20,7 +20,7 @@ public class RegistroVeiculo {
     public String cor;
     public int hora;
     public int minuto;
-    public int codigo = 0;
+    public static int codigo = 0;
     
     public void Registrar(){
 
@@ -78,21 +78,30 @@ public class RegistroVeiculo {
                                 System.out.println("Minuto invalido! Digite apenas entre 0 as 59 minutos.");
                         }while (minuto <0 || minuto >59);
                         
-                        codigo = codigo + 1;
+                        codigo++;
                         
                         System.out.println("Veículo registrado com suceso na vaga" + vaga + ".\nCódigo do v´eículo: " + codigo);
                         
-                        
-                
-                
-                
-                
-   
-              
-            }
-                
-        
-        
-    }while 
-}
+        }
+         
+         public String getPlaca() {
+             return placa;
+         }
+         
+         public int getTipo() {
+             return tipo;
+         }
+         public int getCodigo() {
+             return codigo;
+         }
+         public int getHora() {
+             return hora;
+         }
+         public int getMinuto() {
+             return minuto;
+         }
     }
+}
+
+
+                      
