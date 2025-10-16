@@ -1,35 +1,42 @@
-
 package projeto.pratico;
 
 import java.util.Scanner;
 
 public class ProjetoPratico {
-    
 
-   
     public static void main(String[] args) {
-        
-         Scanner input = new Scanner(System.in);
-        
-       int escolha;
-       
-          do { 
-            System.out.print(
-                    "==== MENU INCIAL DO ESTACIONAMENTO ====\n"
-                            + " 1- REGISTRAR VEÍCULO EM VAGA\n"
-                            + " 2- FINALIZAR USO DO VEÍCULO NA VAGA\n"
-                            + " 3- CONSULTAR DISPONIBILIDADE DE VAGAS\n"
-                            + " 4- CONSULTAR SALDO E HISTÓRICO DE PAGAMENTOS\n"
-                            + " 0- SAIR\n"
-                            + " DIGITE A OPÇÃO DESEJADA: ");
-                                escolha = input.nextInt();
-                                input.nextInt();
-          switch(escolha){
-              case 1 -> 
-          }
-        }
-    
-    
 
-}
+        RegistroVeiculo rv = new RegistroVeiculo();
+        Scanner input = new Scanner(System.in);
+
+        int escolha;
+
+        do {
+            System.out.print(
+                    """
+                    ==== MENU INICIAL DO ESTACIONAMENTO ====
+                     1 - REGISTRAR VEÍCULO EM VAGA
+                     2 - FINALIZAR USO DO VEÍCULO NA VAGA
+                     3 - CONSULTAR DISPONIBILIDADE DE VAGAS
+                     4 - CONSULTAR SALDO E HISTÓRICO DE PAGAMENTOS
+                     0 - SAIR
+                     DIGITE A OPÇÃO DESEJADA:  """
+            );
+
+            escolha = input.nextInt();
+            input.nextLine();
+
+            switch (escolha) {
+                case 1 -> rv.registrar();
+                case 2 -> System.out.println("Finalizar uso do veículo na vaga...");
+                case 3 -> System.out.println("Consultar disponibilidade de vagas...");
+                case 4 -> System.out.println("Consultar saldo e histórico de pagamentos...");
+                case 0 -> System.out.println("\nEncerrando o sistema...");
+                default -> System.out.println("\nOpção inválida! Tente novamente.\n");
+            }
+
+            System.out.println();
+
+        } while (escolha != 0);
+    }
 }
