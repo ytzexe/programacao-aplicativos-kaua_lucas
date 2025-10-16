@@ -119,5 +119,4 @@ public class RegistroVeiculo {
     public int getMinuto() { return minuto; }
     public int getVaga() { return vaga; }
     public static int getCodigo() { return codigo; }
-
-    }
+}
