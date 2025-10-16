@@ -25,7 +25,7 @@ public class ProjetoPratico {
                                 escolha = input.nextInt();
                                 input.nextInt();
           switch(escolha){
-              case 1 ->
+              case 1 -> 
           }
         }
     
