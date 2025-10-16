@@ -7,6 +7,8 @@ package projeto.pratico;
 import java.util.Scanner;
 
 public class RegistroVeiculo {
+
+  
     
        private int tipo;
        private String placa;
@@ -17,11 +19,11 @@ public class RegistroVeiculo {
        private int hora;
        private int minuto;
        private int vaga;
-    
+       
     private static int codigo = 0;
     private static int proximaVaga = 1;   
     private static final int MAX_VAGAS = 10; 
-    
+     
     public void registrar(){
 
         Scanner input = new Scanner(System.in);
@@ -118,5 +120,6 @@ public class RegistroVeiculo {
     public int getHora() { return hora; }
     public int getMinuto() { return minuto; }
     public int getVaga() { return vaga; }
+  
     public static int getCodigo() { return codigo; }
 }
