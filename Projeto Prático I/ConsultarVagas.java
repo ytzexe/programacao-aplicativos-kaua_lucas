@@ -1,13 +1,10 @@
-
 package projeto.pratico;
 
-
 class ConsultarVagas {
-  
 
     void consulta() {
-  System.out.println("--- DISPONIBILIDADE DE VAGAS ---");
-        
+        System.out.println("--- DISPONIBILIDADE DE VAGAS ---");
+
         int totalOcupadas = 0;
         int totalLivres = 0;
 
@@ -18,11 +15,13 @@ class ConsultarVagas {
                 System.out.println("Vaga " + (i + 1) + " (Tipo: " + veiculo.getTipo() + "): OCUPADA - Placa: " + veiculo.getPlaca());
                 totalOcupadas++;
             } else {
-              
                 System.out.println("Vaga " + (i + 1) + " (Tipo: 0): LIVRE");
                 totalLivres++;
             }
         }
+
+        System.out.println();
+        System.out.println("Total de vagas ocupadas: " + totalOcupadas);
+        System.out.println("Total de vagas livres: " + totalLivres);
     }
 }
-
