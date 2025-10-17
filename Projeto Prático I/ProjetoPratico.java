@@ -1,19 +1,21 @@
+
 package projeto.pratico;
 
 import java.util.Scanner;
 
 public class ProjetoPratico {
+    
 
+   
     public static void main(String[] args) {
-
-        RegistroVeiculo rv = new RegistroVeiculo();
-        ConsultarVagas cs = new ConsultarVagas();
-        Scanner input = new Scanner(System.in);
-
-        int escolha;
         
-      
-        do {
+        
+         RegistroVeiculo rv = new RegistroVeiculo();
+         ConsultarVagas cs = new ConsultarVagas();
+         Scanner input = new Scanner(System.in);
+        
+       int escolha;
+     do {
             System.out.print(
                     """
                     ==== MENU INICIAL DO ESTACIONAMENTO ====
