@@ -1,4 +1,3 @@
-
 package projeto.pratico;
 
 import java.util.Scanner;
@@ -12,6 +11,8 @@ public class ProjetoPratico {
         
          RegistroVeiculo rv = new RegistroVeiculo();
          ConsultarVagas cs = new ConsultarVagas();
+         FinalizarUso fu = new FinalizarUso();
+         HistoricoSaldo hs = new HistoricoSaldo();
          Scanner input = new Scanner(System.in);
         
        int escolha;
@@ -32,9 +33,9 @@ public class ProjetoPratico {
 
             switch (escolha) {
                 case 1 -> rv.registrar();
-                case 2 -> System.out.println("Finalizar uso do veículo na vaga...");
+                case 2 -> fu.finalizar();
                 case 3 -> cs.consulta();
-                case 4 -> System.out.println("Consultar saldo e histórico de pagamentos...");
+                case 4 -> hs.exibirHistorico();
                 case 0 -> System.out.println("\nEncerrando o sistema...");
                 default -> System.out.println("\nOpção inválida! Tente novamente.\n");
             }
